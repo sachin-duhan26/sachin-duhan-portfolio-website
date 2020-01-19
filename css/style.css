@@ -96,6 +96,12 @@ button:focus {
 
 /*----------------------------------------------------*/
 
+@media(max-width:990px) {
+    #main_logo {
+        color: white;
+    }
+}
+
 .section_gap {
     padding: 200px 0;
 }
