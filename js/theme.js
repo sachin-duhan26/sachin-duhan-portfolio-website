@@ -20,37 +20,16 @@
     }
     navbarFixed();
 
-    /*----------------------------------------------------*/
-    /*  MailChimp Slider
-    /*----------------------------------------------------*/
-    function mailChimp() {
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    }
-    mailChimp();
-
-    $('select').niceSelect();
-    /* ---------------------------------------------
-            Isotope js Starts
-         --------------------------------------------- */
-    $(window).on('load', function() {
-        $('.portfolio-filter ul li').on('click', function() {
-            $('.portfolio-filter ul li').removeClass('active');
-            $(this).addClass('active');
-
-            var data = $(this).attr('data-filter');
-            $workGrid.isotope({
-                filter: data
-            });
+    /**
+     * --------------------------------------------------------
+     * submitted the form!
+     * --------------------------------------------------------
+     */
+    $("#contactForm").submit(function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        $.post($form.attr("action"), $form.serialize()).then(function() {
+            alert("Thank you!");
         });
-
-        if (document.getElementById('portfolio')) {
-            var $workGrid = $('.portfolio-grid').isotope({
-                itemSelector: '.all',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.all'
-                }
-            });
-        }
     });
 })(jQuery);
