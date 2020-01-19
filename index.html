@@ -373,7 +373,7 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="row contact_form" name="contactForm" method="POST" data-netlify="true" id="contactForm">
+                    <form class="row contact_form" data-netlify-recaptcha="true" name="contactForm" method="POST" data-netlify="true" id="contactForm">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" required placeholder="Enter your name">
@@ -390,6 +390,7 @@
                                 <textarea class="form-control" name="message" rows="2" required placeholder="Enter Message"></textarea>
                             </div>
                         </div>
+                        <div data-netlify-recaptcha="true"></div>
                         <div class="col-md-12 text-right">
                             <button type="submit" value="submit" class="primary_btn">
                                     <span>Send Message</span>
