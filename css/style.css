@@ -4220,7 +4220,7 @@ h6 {
         display: none;
     }
     .header_area .navbar .primary_btn {
-        display: none;
+        /* display: none; */
     }
     .left_side_text {
         margin-bottom: 50px;
@@ -4247,7 +4247,7 @@ h6 {
         margin-top: 0px;
     }
     .home_banner_area .banner_inner .banner_content .primary_btn {
-        display: none;
+        /* display: none; */
     }
     /* Blog Page Area css
   ============================================================================================ */
