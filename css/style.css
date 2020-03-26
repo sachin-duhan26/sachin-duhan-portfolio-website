@@ -577,6 +577,25 @@ button:focus {
     }
 }
 
+.pointer {
+    cursor: pointer;
+}
+
+.hover-text-main {
+    transition: 200ms ease-in-out;
+    color: rgb(158, 155, 155);
+}
+
+.hover-text-main:hover {
+    color: #4458dc;
+}
+
+.side_icon_div {
+    position: absolute;
+    top: -60px;
+    right: -80px;
+}
+
 .home_banner_area .banner_inner .banner_content h5 {
     font-size: 24px;
     margin-bottom: 35px;
@@ -3273,4 +3292,7 @@ margin-top: 25px;
     .call-now {
         padding-top: 0px;
     }
+}
+.navbar .main_menu {
+    background-color: transparent;
 }
